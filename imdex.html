@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="\ico\picwish.ico" type="image\x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo">Wtime </h1>
+        <p id="subtitulo">Formulario para preenchimento </p>
+        <br>
+    </div>
+        <form>
+            <fieldset class="grupo"> <!--- para deixa em volta do nome dentro do quadrado-->
+            <div class="campo">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" required> <!--required serve para so enviar o doc se o ome estiver preenchido-->
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+            <div class="campo">
+                <label for="telefone"><strong>telefone:</strong></label>
+                <input type="text" name="telefone" id="telefone" required>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <label for=" email"><strong>Email Corporativo</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="campo">
+
+            <label> Qual Unidade </label> 
+            <label>
+                <input type="radio" name="devweb" value="Santa Joana" checked> Santa joana<!--- Input type para criar botao de bolinha\\ checked para deixar uma opcao selcondad-->
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="Promate"> Promate
+            </label>
+            <label>
+                <input type="radio" name="devweb" id="Santa Maria"> Santa maria
+            </label>
+        </div>
+        <div> 
+            <label><strong> responsavel</strong></label><!-- id criar uma caixa com opçoes-->
+            <select id="Setor">
+                <option selected disabled value="">Selecione</option> <!--option selected disabled value tem a função de fazer deixa o espaco sem deixar clicavel-->
+                <option>Service Desk</option>
+                <option>Sistemas</option>
+                <option>Infraestrutura</option>
+            </select>
+        </div>
+        <fieldset class="grupo">
+            <div> <br>
+                <label><strong>Selecione uma nota para o setor </strong></label><br><br> <!-- Criando uma caixa para avaliaão-->
+                <input type="checkbox" id="sugestao" name="sugestao" value="sugestao">
+                <label for="sugestao1">Ruim</label> <br>
+                <input type="checkbox" id="sugestao" name="sugestao" value="sugestao">
+                <label for="sugestao1">Pode ser melhor</label><br>
+                <input type="checkbox" id="sugestao" name="sugestao" value="sugestao">
+                <label for="sugestao1">Bom</label><br>
+                <input type="checkbox" id="sugestao" name="sugestao" value="sugestao">
+                <label for="sugestao1">Otimo</label>
+           
+            </div>
+        </fieldset>
+        <div>
+            <br>
+            <label><strong> uma pouco sobre sua experiença no setor e na empresa</strong></label><br>
+            <textarea row="6" style="width: 26em" id="experiencia"  name="experiencia"></textarea>
+        </div>
+        <button class="botao" type="submit"><a rel="nofollow" href="https://wtime.com.br/">Concluido</a></button>  
+        </form>
+
+
+</body>
+</html>
